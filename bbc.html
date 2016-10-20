@@ -3,14 +3,73 @@
         <title>Technology - BBC News</title>
         <style>
             #topbar{
-                width: 960px;
+                width: 1100px;
                 margin:0 auto;
-                background-color: red;
                 height:40px;
             }
             body{
                 margin: 0;
                 padding: 0;
+                font-family: Helvetica,Arial,sans-serif;
+            }
+
+            #logo{
+                margin: 8px;
+                width: 100px;
+                float: left;
+            }
+            .topbar-section{
+                float: left;
+                border-left: 1px #cccccc solid;
+                height: 100%;
+            }
+            .topbar-menu{
+                font-weight: bold;
+                font-size: 15px;
+                padding: 13px 15px 0px 15px;
+                height:27px;
+            }
+            #sign-in-img{
+                margin: 12px 15px;
+                width: 25px;
+                float: left;
+            }
+            #sign-in-text{
+                font-weight: bold;
+                font-size: 90%;
+                position: relative;
+                top: 15px;
+                padding-right: 50px;
+            }
+            #bell-div{
+                height: 100%;
+                float: left;
+            }
+            #wigly-line{
+                float: left;
+                height:100%
+            }
+            #bell{
+                height:30px;
+                margin: 8px 10px;
+            }
+            #drop-menu{
+                width:10px;
+                position: relative;
+                top: -2px;
+            }
+            #search-box{
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 5px;
+                margin: 5px 0px 5px 5px;
+                float: left;
+            }
+            #search-icon{
+                height: 27px;
+                margin-top: 4px;
             }
         </style>
 
@@ -18,6 +77,45 @@
 
 <body>
     <div id="topbar">
+        <img id="logo" src="./images/bbc-blocks-dark.png">
+        <div id="signin-div" class="topbar-section">
+            <img id="sign-in-img"src="images/sign-in.png">
+            <span id="sign-in-text">Sign In</span>
+        </div>
+        <div id="bell-div">
+            <img id="wigly-line" src="images/zig-zag-line.PNG">
+            <img id="bell"src="images/bell-icon.png">
+
+        </div>
+        <div class="topbar-section topbar-menu">
+            News
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Sport
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            Weather
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            iPlayer
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            TV
+        </div>
+
+        <div class="topbar-section topbar-menu">
+            More
+            <img id="drop-menu"src="images/drop-menu.png">
+        </div>
+        <div class="topbar-section">
+            <input id="search-box"type="text" value="Search">
+            <input type="image" id="search-icon"src="images/search-icon.png">
+
+        </div>
 
     </div>
 </body>
